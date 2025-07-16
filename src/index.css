@@ -5,3 +5,20 @@ body {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg-weather-gradient {
+  background: linear-gradient(
+    120deg,
+    #000000 0%,       /* Black */
+    #1e3a8a 30%,      /* Deep Blue */
+    #0ea5e9 50%,      /* Sky Blue */
+    #10b981 75%,      /* Emerald Green */
+    #22c55e 100%      /* Lime Green */
+  ),
+  radial-gradient(
+    circle at bottom right,
+    #10b981 0%,       /* Highlighted Green */
+    transparent 70%
+  );
+  background-blend-mode: screen;
+}
